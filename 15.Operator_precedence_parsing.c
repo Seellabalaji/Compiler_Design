@@ -102,7 +102,7 @@ for(j=i;j<l;j++)
 
 
 
-void main()
+int main()
 {
 int j;
 
