@@ -4,16 +4,16 @@
   int main () {  
        char non_terminal;  
        char beta,alpha;  
-       int num;  
+       int num,i;  
        char production[10][SIZE];  
        int index=3; /* starting of the string following "->" */  
        printf("Enter Number of Production : ");  
        scanf("%d",&num);  
        printf("Enter the grammar as E->E-A :\n");  
-       for(int i=0;i<num;i++){  
+       for(i=0;i<num;i++){  
             scanf("%s",production[i]);  
        }  
-       for(int i=0;i<num;i++){  
+       for(i=0;i<num;i++){  
             printf("\nGRAMMAR : : : %s",production[i]);  
             non_terminal=production[i][0];  
             if(non_terminal==production[i][index]) {  
